@@ -1,0 +1,28 @@
+{
+  "name": "ansi-blit",
+  "version": "1.0.0",
+  "description": "ansi-blit",
+  "main": "lib/index.js",
+  "bin": "bin/blit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alivesay/ansi-blit.git"
+  },
+  "author": "Andrew Livesay <andrew.livesay@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alivesay/ansi-blit/issues"
+  },
+  "homepage": "https://github.com/alivesay/ansi-blit#readme",
+  "dependencies": {
+    "ansi": "^0.3.0",
+    "cli": "^0.10.0",
+    "continuation-local-storage": "^3.1.4",
+    "fisher-yates": "^1.0.3",
+    "jimp": "^0.2.5",
+    "lodash": "^3.10.1"
+  }
+}

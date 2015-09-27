@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var cli = require('cli');
+var path = require('path');
+var fs = require('fs');
+
+var AnsiBlit = require(path.join(path.dirname(fs.realpathSync(__filename)), '../lib'));
+
+cli.option_width = 30;
+
+cli.setUsage('blit [OPTIONS] FILENAME');
+
+cli.parse({
+    mode: [ 'm', 'Display mode: ' + AnsiBlit.validModes.join('|'), 'string', AnsiBlit.defaultOptions.mode ],
+    showbounds: [ 'sb', 'Scale image to console width (Default is ' + AnsiBlit.defaultOptions.showbounds +')' ],
+    tilewidth: [ 'w', 'Width of tiles', 'int', AnsiBlit.defaultOptions.tilewidth ],
+    tileheight: [ 'h', 'Height of tiles', 'int', AnsiBlit.defaultOptions.tileheight ],
+    tilerow: [ 'row', 'Row of tile to display (Default is ' + AnsiBlit.defaultOptions.tilerow + ')', 'int' ],
+    tilecolumn: [ 'col', 'Column of tile to display (Default is ' + AnsiBlit.defaultOptions.tilecolumn + ')', 'int' ]
+});
+
+cli.main(function main (args, options) {
+
+    if (args.length === 0) {
+        cli.error('missing FILENAME');
+        cli.getUsage();
+    }
+
+    AnsiBlit.blit(args[0], options, function (err) {
+        if (err) {
+            cli.fatal(err);
+        }
+    });
+});
