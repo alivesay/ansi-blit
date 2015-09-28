@@ -1,6 +1,6 @@
 {
   "name": "ansi-blit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ansi-blit",
   "main": "lib/index.js",
   "bin": {
