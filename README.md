@@ -3,6 +3,10 @@
 ```
 DISPLAYS IMAGES IN YOUR SHELL! (╯°□°）╯︵ ┻━┻
 ```
+![](http://i.imgur.com/NKR9mfx.png)
+
+Demonstration above provided for educational purposes only using [this](http://veekun.com/static/pokedex/downloads/generation-3.png) source image.
+
 Install:
 ```
 $ npm install -g ansi-blit
