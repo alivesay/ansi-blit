@@ -32,6 +32,10 @@ Examples:
 $ echo "blit --mode randomtile sprites.png" >> ~/.bashrc
 ```
 ```
+# 5% chance of random display on login
+$ echo "(((($RANDOM % 100) + 1) <= 5)) && blit --mode randomtile sprites.png" >> ~/.bashrc
+```
+```
 # continuously display random tiles
 $ while :; do blit --mode randomtile sprites.png; done
 ```
