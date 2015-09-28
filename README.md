@@ -19,11 +19,11 @@ Usage:
 
 Options:
       --mode [STRING]         Display mode: full|tile|randomtile (Default is full)
-      --showbounds           Scale image to console width (Default is false)
+      --showbounds            Scale image to console width (Default is false)
       --tilewidth [NUMBER]    Width of tiles (Default is 64)
       --tileheight [NUMBER]   Height of tiles (Default is 64)
-      --tilerow NUMBER      Row of tile to display (Default is 0)
-      --tilecolumn NUMBER   Column of tile to display (Default is 0)
+      --tilerow NUMBER        Row of tile to display (Default is 0)
+      --tilecolumn NUMBER     Column of tile to display (Default is 0)
 ```
 
 Examples:
