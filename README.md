@@ -41,5 +41,5 @@ $ while :; do blit --mode randomtile sprites.png; done
 ```
 ```
 # display the 2nd tile on the 3rd row, using 16x16 tiles
-$ blit --mode tile -w 16 -h 16 -row 3 -col 2 -col sprites.png; done
+$ blit --mode tile --tilewidth 16 ---tileheight 16 --tilerow 3 --tilecolumn 2 sprites.png
 ```
